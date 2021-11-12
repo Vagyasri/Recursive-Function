@@ -38,4 +38,11 @@ function multiply(arr, n) {
   return product;
 }
 
-console.log(multiply([1], 0)); // 0
+// with recursive function
+function multiplyRec(arr, n) {
+  if (n <= 0) { return 1; } // base case
+  return arr[n - 1] * multiplyRec(arr, n - 1); // recursive case
+}
+
+console.log(multiply([2, 3, 4], 2)); // 6
+console.log(multiplyRec([2, 3, 4], 2)); // 6
