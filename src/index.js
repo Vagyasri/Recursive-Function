@@ -113,8 +113,13 @@ console.log(countdownConcat(5)); // [5, 4, 3, 2, 1]
 
 // without recursive function
 function rangeOfNumbers(start, end) {
-
+  const arr = [];
+  for (let i = start; i <= end; i += 1) {
+    arr.push(i);
+  }
+  return arr;
 }
+
 console.log(rangeOfNumbers(1, 5)); // [1, 2, 3, 4, 5].
 console.log(rangeOfNumbers(6, 9)); // [6, 7, 8, 9].
 console.log(rangeOfNumbers(4, 4)); // [4].
