@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import './style.css';
 
-// Write a recursive function, sum(arr, n), that returns the sum of the first n elements of an array arr
+// 1. Write a recursive function, sum(arr, n), that returns the sum of the first n elements of an array arr
 
 // without recursive function
 function sum(arr, n) {
@@ -27,7 +27,7 @@ console.log(sumRec([2, 3, 4], 1)); // 2
 
 console.log(sum([2, 3, 4, 5], 3)); // 9
 
-// multiply the first n elements of an array to create the product of those elements
+// 2. multiply the first n elements of an array to create the product of those elements
 
 // without recursive function
 function multiply(arr, n) {
@@ -46,3 +46,16 @@ function multiplyRec(arr, n) {
 
 console.log(multiply([2, 3, 4], 2)); // 6
 console.log(multiplyRec([2, 3, 4], 2)); // 6
+
+// 3. Get factorial of a number
+
+// without recursive function
+function factorial(n) {
+  let fact = 1;
+  for (let i = 0; i < n; i += 1) {
+    fact *= n - i;
+  }
+  return fact;
+}
+
+console.log(factorial(5)); // 120
