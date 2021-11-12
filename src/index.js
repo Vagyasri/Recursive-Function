@@ -88,14 +88,15 @@ function countdownUnshift(n) {
   return arr;
 }
 
-// with recursive function
-function countdownRec(n) {
+// with recursive function // (not working)
+function countdownArr(arr, n) {
   if (n <= 0) {
     return [];
   }
-  return [n].concat(countdown(n - 1));
+  arr.push(n);
+  return countdown(arr, n - 1);
 }
 
 console.log(countdown(5)); // [5, 4, 3, 2, 1]
 console.log(countdownUnshift(5)); // [5, 4, 3, 2, 1]
-console.log(countdownRec(5)); // [5, 4, 3, 2, 1]
+console.log(countdownArr([], 5)); // [5, 4, 3, 2, 1]
