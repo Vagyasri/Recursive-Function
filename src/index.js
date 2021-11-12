@@ -120,6 +120,14 @@ function rangeOfNumbers(start, end) {
   return arr;
 }
 
+// without recursive function
+function rangeOfNumbersRec(start, end) {
+  return (start > end) ? [] : [start].concat(rangeOfNumbersRec(start + 1, end));
+}
+
 console.log(rangeOfNumbers(1, 5)); // [1, 2, 3, 4, 5].
 console.log(rangeOfNumbers(6, 9)); // [6, 7, 8, 9].
 console.log(rangeOfNumbers(4, 4)); // [4].
+console.log(rangeOfNumbersRec(1, 5)); // [1, 2, 3, 4, 5].
+console.log(rangeOfNumbersRec(6, 9)); // [6, 7, 8, 9].
+console.log(rangeOfNumbersRec(4, 4)); // [4].
