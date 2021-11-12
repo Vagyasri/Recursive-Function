@@ -122,7 +122,13 @@ function rangeOfNumbers(start, end) {
 
 // without recursive function
 function rangeOfNumbersRec(start, end) {
-  return (start > end) ? [] : [start].concat(rangeOfNumbersRec(start + 1, end));
+  // return (start > end) ? [] : [start].concat(rangeOfNumbersRec(start + 1, end));
+  if (start > end) {
+    return [];
+  }
+  const arr = rangeOfNumbersRec(start + 1, end);
+  arr.unshift(start);
+  return arr;
 }
 
 console.log(rangeOfNumbers(1, 5)); // [1, 2, 3, 4, 5].
