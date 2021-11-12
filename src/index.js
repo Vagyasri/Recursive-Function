@@ -108,3 +108,13 @@ console.log(countdown(5)); // [5, 4, 3, 2, 1]
 console.log(countdownUnshift(5)); // [5, 4, 3, 2, 1]
 console.log(countdownRec(5)); // [5, 4, 3, 2, 1]
 console.log(countdownConcat(5)); // [5, 4, 3, 2, 1]
+
+// 5. Write a function to print a rangeOfNumbers with two parameters
+
+// without recursive function
+function rangeOfNumbers(start, end) {
+
+}
+console.log(rangeOfNumbers(1, 5)); // [1, 2, 3, 4, 5].
+console.log(rangeOfNumbers(6, 9)); // [6, 7, 8, 9].
+console.log(rangeOfNumbers(4, 4)); // [4].
