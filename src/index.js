@@ -53,9 +53,17 @@ console.log(multiplyRec([2, 3, 4], 2)); // 6
 function factorial(n) {
   let fact = 1;
   for (let i = 0; i < n; i += 1) {
-    fact *= n - i;
+    fact *= i + 1; // fact *= n - i
   }
   return fact;
 }
 
+// with recursive function
+function factorialRec(n) {
+  if (n <= 0) {
+    return 1;
+  }
+  return n * factorialRec(n - 1);
+}
 console.log(factorial(5)); // 120
+console.log(factorialRec(5)); // 120
