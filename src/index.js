@@ -80,13 +80,22 @@ function countdown(n) {
 }
 
 // or
-function countdownS(n) {
+function countdownUnshift(n) {
   const arr = [];
-  for (let i = 0; i <= n; i += 1) {
+  for (let i = 1; i <= n; i += 1) {
     arr.unshift(i);
   }
   return arr;
 }
 
+// with recursive function
+function countdownRec(n) {
+  if (n <= 0) {
+    return [];
+  }
+  return [n].concat(countdown(n - 1));
+}
+
 console.log(countdown(5)); // [5, 4, 3, 2, 1]
-console.log(countdownS(5)); // [5, 4, 3, 2, 1]
+console.log(countdownUnshift(5)); // [5, 4, 3, 2, 1]
+console.log(countdownRec(5)); // [5, 4, 3, 2, 1]
