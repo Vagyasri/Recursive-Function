@@ -71,4 +71,22 @@ console.log(factorialRec(5)); // 120
 // 4. Use Recursion to Create a Countdown (write a recursive function that returns an array containing the numbers 1 through n in descending order)
 
 // without recursive function
+function countdown(n) {
+  const arr = [];
+  for (let i = n; i > 0; i -= 1) {
+    arr.push(i);
+  }
+  return arr;
+}
 
+// or
+function countdownS(n) {
+  const arr = [];
+  for (let i = 0; i <= n; i += 1) {
+    arr.unshift(i);
+  }
+  return arr;
+}
+
+console.log(countdown(5)); // [5, 4, 3, 2, 1]
+console.log(countdownS(5)); // [5, 4, 3, 2, 1]
