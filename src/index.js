@@ -94,13 +94,14 @@ function countdownRec(n) {
     return [];
   }
   const arr = countdownRec(n - 1);
-  arr.unshift(n);
+  arr.unshift(n); // or arr.splice(0, 0, n);
   return arr;
 }
 
 // second version of recursive function
 function countdownConcat(n) {
   return n <= 0 ? [] : [n].concat(countdownConcat(n - 1));
+  // or return n < 1 ? [] : [n, ...countdownConcat(n - 1)];
 }
 
 console.log(countdown(5)); // [5, 4, 3, 2, 1]
