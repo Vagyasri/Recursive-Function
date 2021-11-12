@@ -1,6 +1,5 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Project
+# Recursive Function
+In this project I am practicing Recursive-Function using Javascript.
 
 ## Built With
 
@@ -8,17 +7,10 @@
 - CSS
 - JavaScipt
 - Webpack
-- ES6
-- External API
-- JSON
-
-## Screenshot
-
-![Drum](Drum.png) 
 
 ## Live Demo
 
-[Live View!!](https://vagyasri.github.io/Leaderboard/dist/)
+[Live View!!](https://vagyasri.github.io/Recursive-Function/dist/)
 
 ## Author
 
@@ -38,9 +30,9 @@
 
 ### Cloning the repo to your local system (If you already have git, installed in your system):
 
-- [Copy this link](https://github.com/Vagyasri/Kanban.git)
+- [Copy this link](https://github.com/Vagyasri/Recursive-Function.git)
 - Open your terminal or command line
-- Run "git clone [Paste this link](https://github.com/Vagyasri/Kanban.git)"
+- Run "git clone [Paste this link](https://github.com/Vagyasri/Recursive-Function.git)"
 - Open the folder with your code editor
 - Now You can edit the code and check the changes in the browser using Live Server
 
@@ -81,7 +73,7 @@ Start by:
 - Push your branch up to your forked repository
 - Open a Pull Request with a detailed description to the development branch of the original project for a review
 
-Feel free to check the [issues page](https://github.com/Vagyasri/Kanban/issues), contribute to the Project by creating an issue.
+Feel free to check the [issues page](https://github.com/Vagyasri/Recursive-Function/issues), contribute to the Project by creating an issue.
 
 
 ## Show your support
